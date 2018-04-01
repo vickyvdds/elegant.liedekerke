@@ -1,0 +1,26 @@
+# Site settings
+title: Elegant
+email: your-email@domain.com
+url: https://example.github.io
+description: "Haar en nagelstudio"
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary-light: '#fff'
+  primary-dark: '#4b4b4b'
+  links: '#ff3680'
+
+# Footer settings
+footer: Elegant
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: 
+  - title: facebook
+    url:
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+include: ['_pages']
