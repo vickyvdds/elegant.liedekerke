@@ -1,5 +1,5 @@
 // jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
+$(window).scroll(function () {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
@@ -7,9 +7,9 @@ $(window).scroll(function() {
     }
 });
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
+// jQuery for page scrolling feature
+$(function () {
+    $('a.page-scroll').bind('click', function (event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
@@ -19,17 +19,31 @@ $(function() {
 });
 
 // Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
+$('.navbar-collapse ul li a').click(function () {
     $('.navbar-toggle:visible').click();
 });
 
 // remove the focused state after click,
 // otherwise bootstrap will still highlight the link
-$("a").mouseup(function(){
+$("a").mouseup(function () {
     $(this).blur();
-})
+});
 
-// Google Maps Scripts
+$(document).ready(function () {
+    $('.gallery').owlCarousel({
+        center: true,
+        items: 3,
+        loop: true,
+        margin: 10,
+        autoWidth:true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause:true,
+        smartSpeed: 1000
+    });
+});
+
+/* Google Maps Scripts
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 
@@ -176,3 +190,4 @@ function init() {
         icon: image
     });
 }
+*/

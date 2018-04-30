@@ -33,6 +33,10 @@ p {
     line-height: 1.5;
 }
 
+.clear {
+    padding-bottom: 10px;
+}
+
 @media(min-width:767px) {
     p {
         margin: 0 0 20px;
@@ -207,21 +211,82 @@ a:focus {
     padding-top: 50px;
 }
 
-.page-header.nailstudio {
-    background-position-y: -180px;
+@media(min-width:1100px) {
+    .page-header.nailstudio {
+        background-position-y: -180px;
+    }
+
+    .page-header.hairdresser {
+        background-position-y: 0px;
+    }
 }
 
-.page-header.hairdresser {
-    background-position-y: 0px;
-}
+/*** Pages ***/
 
-/*** Page Info ***/
+.page {
+    padding-top: 125px;
+}
 
 .page-info {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-height: 300px;
+    max-width: 500px;
     padding: 35px 40px;
-    margin-top: -100px;
+    margin-top: 4px;
     background-color: white;
+    border-top: 7px solid #ee88a9;
+}
+
+.page-info-lg {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-height: 300px;
+    padding: 35px 40px;
+    margin-top: 4px;
+    margin-left: 50px;
+    background-color: white;
+    border-top: 7px solid #ee88a9;
+}
+
+@media(min-width:1100px) {
+    .page-info {
+        margin-left: -100px;
+        margin-right: 100px;
+    }    
+}
+
+@media(max-width:1100px) {
+    .page-info {
+        margin-left: 100px;
+    }    
+
+    .page-actions {
+        margin-left: auto;
+        display: inline-flex;
+        padding-bottom: 25px;
+    }
+}
+
+.page-actions {
+    margin-left: 45px;
+    padding-top: 25px;
+}
+
+.page-actions .btn {
+    margin-left: 10px;
+}
+
+.page-img {
+    max-width: 500px;
+    margin-top: -85px;
+    margin-left: 25px;
+}
+
+.contact h2 {
+    font-size: 32px;
+}
+
+.contact h3 {
+    font-size: 28px;
 }
 
 .contact-info {
@@ -232,16 +297,68 @@ a:focus {
     padding-left: 10px;
 }
 
+.contact img {
+    max-width: 500px;
+    padding-top: 100px;
+}
+
+/*** Gallery ***/
+
+.gallery {
+    padding-top: 75px;
+}
+
+.gallery .owl-item {
+    max-height: 250px !important;
+}
+
+.gallery img {
+    max-width: 250px;
+}
+
+.nail-gallery img {
+    height: 190px;
+}
+
 /*** Tables ***/
 
+table tr:hover {
+    background-color: #f1cbd1;
+}
+
 .opening-hours-table tr {
-    border-bottom: 1px solid silver; 
+    border-bottom: 1px solid #dddddd; 
 }
 
 .opening-hours-table tr td:last-child {
     padding-left: 100px; 
     padding-top: 7px;
     padding-bottom: 7px;
+}
+
+.pricelist-table tr td { 
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.pricelist-table tr td:first-child { 
+    padding-left: 25px;
+}
+
+.pricelist-table tr td { 
+    padding-right: 20px;
+}
+
+.pricelist-table tr {
+    border-bottom: 1px solid #dddddd; 
+}
+
+.pricelist-table {
+    width: 750px;
+}
+
+.pricelist-table-hairsalon tr td:first-child{
+    padding-right: 60px;
 }
 
 .btn-circle {
@@ -341,7 +458,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 200px;
+        padding-top: 100px;
     }
 
     .action-section {
@@ -402,15 +519,55 @@ ul.banner-social-buttons li {
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
     }
+
+    .page-info {
+        max-width: 500px;
+        display: block; 
+        margin: 0 auto;
+    }
+    
+    .page-img {
+        max-width: 500px;
+        display: block; 
+        margin: 0 auto;
+    }    
 }
 
 footer {
-    padding: 50px 0;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 footer p {
     margin: 0;
     font-size: 15px;
+}
+
+.footer-content {
+    border-top: 1px solid #e3e3e3;
+    padding-top: 50px;
+}
+
+footer .copyright {
+    padding-top: 50px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    padding-bottom: 7px;
+}
+
+footer ul li a {
+    color: #4b4b4b;
+}
+
+footer .fa-facebook-official {
+    color: #4b4b5c;
+    font-size: 18px;
+    padding-top: 3px;
 }
 
 ::-moz-selection {

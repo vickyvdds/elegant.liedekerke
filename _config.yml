@@ -15,10 +15,8 @@ footer: Elegant
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: 
   - title: facebook
-    url:
+    url: https://www.facebook.com/Elegant-haar-en-nagelstudio-1590313031256873/
 
 # Build settings
 markdown: kramdown
