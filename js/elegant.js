@@ -35,6 +35,7 @@ $(document).ready(function () {
         items: 3,
         loop: true,
         margin: 10,
+        lazyLoad:true,
         autoWidth:true,
         autoplay: true,
         autoplayTimeout: 3000,

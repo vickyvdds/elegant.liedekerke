@@ -247,7 +247,7 @@ a:focus {
     border-top: 7px solid #ee88a9;
 }
 
-@media(min-width:1100px) {
+@media(min-width:768px) {
     .page-info {
         margin-left: -100px;
         margin-right: 100px;
@@ -256,7 +256,7 @@ a:focus {
 
 @media(max-width:1100px) {
     .page-info {
-        margin-left: 100px;
+        margin-left: 30px;
     }    
 
     .page-actions {
@@ -318,6 +318,12 @@ a:focus {
 
 .nail-gallery img {
     height: 190px;
+}
+
+.hairstyle-gallery img {
+    height: auto;
+    width: auto;
+    max-height: 300px;
 }
 
 /*** Tables ***/
