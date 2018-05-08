@@ -42,6 +42,8 @@ $(document).ready(function () {
         autoplayHoverPause:true,
         smartSpeed: 1000
     });
+
+    $(".rslides").responsiveSlides({ pager: true, namespace: "centered-btns" });
 });
 
 /* Google Maps Scripts
