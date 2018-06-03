@@ -559,13 +559,13 @@ ul.banner-social-buttons li {
     }
 
     .page-info {
-        max-width: 500px;
+        max-width: 80%;
         display: block; 
         margin: 0 auto;
     }
     
     .page-img {
-        max-width: 500px;
+        max-width: 80%;
         display: block; 
         margin: 0 auto;
     }    
