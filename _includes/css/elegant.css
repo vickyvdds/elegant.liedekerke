@@ -119,6 +119,14 @@ a:focus {
     background-color: rgba(255,255,255,.3);
 }
 
+ul.nav.navbar-nav li a.btn-book {
+    background-color: #ff3680;
+}
+
+ul.nav.navbar-nav li a.btn-book:hover {
+    background-color: #ff3680;
+}
+
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -128,6 +136,10 @@ a:focus {
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    ul.nav.navbar-nav li a.btn-book {
+        margin-right: 50px;
     }
 
     .top-nav-collapse {
