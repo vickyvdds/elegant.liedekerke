@@ -183,7 +183,7 @@ ul.nav.navbar-nav li a.btn-book:hover {
 }
 
 .partner-logo {
-    max-width: 200px;
+    max-width: 255px;
 }
 
 @media(min-width:767px) {
@@ -397,6 +397,11 @@ table tr:hover {
 
 .pricelist-table tr td:first-child { 
     padding-left: 25px;
+    min-width: 750px;
+}
+
+.pricelist-table tr td:last-child {
+    min-width: 150px;
 }
 
 .pricelist-table tr td { 
@@ -409,6 +414,20 @@ table tr:hover {
 
 .pricelist-table-hairsalon tr td:first-child{
     padding-right: 60px;
+}
+
+.pricelist-footer {
+    margin-top: 75px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 5%), 0 6px 20px 0 rgb(0 0 0 / 3%);
+    min-height: 25px;
+    padding: 35px 40px;
+    background-color: white;
+    border-top: 7px solid #ee88a9;
+    text-align: center;
+}
+
+.pricelist-footer-text {
+    margin: 0;
 }
 
 .btn-circle {
@@ -487,6 +506,19 @@ table tr:hover {
 
 .content-section {
     padding-top: 100px;
+}
+
+#about .partners {
+    margin-bottom: 30px;
+}
+
+.splitter {
+    max-width: 750px;
+    margin: auto;
+}
+
+#action.content-section {
+    padding-top: 0px;
 }
 
 .action-section {
@@ -618,6 +650,10 @@ footer .fa-facebook-official {
     color: #4b4b5c;
     font-size: 18px;
     padding-top: 3px;
+}
+
+footer .fa-instagram {
+    font-size: 18px;
 }
 
 ::-moz-selection {
