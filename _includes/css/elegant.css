@@ -372,6 +372,7 @@ ul.nav.navbar-nav li a.btn-book:hover {
     height: auto;
     width: auto;
     max-height: 300px;
+    min-height: 240px;
 }
 
 /*** Tables ***/
