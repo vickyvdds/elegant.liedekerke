@@ -366,6 +366,7 @@ ul.nav.navbar-nav li a.btn-book:hover {
 
 .nail-gallery img {
     height: 190px;
+    max-width:170px;
 }
 
 .hairstyle-gallery img {
