@@ -186,6 +186,12 @@ ul.nav.navbar-nav li a.btn-book:hover {
     max-width: 255px;
 }
 
+@media(max-width:500px) {
+    div > .partner-logo:last-child {
+        margin-top: 85px;
+    }
+}
+
 @media(min-width:767px) {
     .intro {
         height: 100%;
@@ -343,6 +349,7 @@ ul.nav.navbar-nav li a.btn-book:hover {
 .contact img {
     max-width: 500px;
     padding-top: 100px;
+    width: 100%;
 }
 
 .contact .row .col-md-6 {
@@ -361,19 +368,19 @@ ul.nav.navbar-nav li a.btn-book:hover {
 }
 
 .gallery img {
-    max-width: 250px;
+    width: auto;
 }
 
 .nail-gallery img {
-    height: 190px;
-    max-width:170px;
+    max-height: 250px;
+    min-height: 200px;
 }
 
 .hairstyle-gallery img {
     height: auto;
     width: auto;
-    max-height: 300px;
     min-height: 240px;
+    max-height: 300px;
 }
 
 /*** Tables ***/
@@ -392,6 +399,12 @@ table tr:hover {
     padding-bottom: 7px;
 }
 
+@media(min-width: 768px) {
+    .pricelist-table tr td:first-child {
+        width: 585px;
+    }
+}
+
 .pricelist-table tr td { 
     padding-top: 7px;
     padding-bottom: 7px;
@@ -399,7 +412,6 @@ table tr:hover {
 
 .pricelist-table tr td:first-child { 
     padding-left: 25px;
-    min-width: 750px;
 }
 
 .pricelist-table tr td:last-child {
@@ -684,8 +696,14 @@ body {
 
 /*** RSlides ***/
 
-.rslides {
+    .rslides {
     margin: 0 auto;
+    }
+
+    @media(max-width:500px) {    
+        .rslides img.page-img {
+            float: none;
+        }
     }
   
   .rslides_container {
