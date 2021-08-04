@@ -369,11 +369,15 @@ ul.nav.navbar-nav li a.btn-book:hover {
 
 .gallery img {
     width: auto;
-}
+    max-width: 300px;
+}  
 
 .nail-gallery img {
+    height: auto;
+    width: auto;
     max-height: 250px;
     min-height: 200px;
+    max-width: 215px;
 }
 
 .hairstyle-gallery img {
@@ -381,6 +385,7 @@ ul.nav.navbar-nav li a.btn-book:hover {
     width: auto;
     min-height: 240px;
     max-height: 300px;
+    max-width: 300px;
 }
 
 /*** Tables ***/
